@@ -12,21 +12,23 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.svg" alt="">
-        <nav>
+        <img id="logo" src="images/logo.svg" alt="">
+        <nav id="menu">
+            <img id="closeNavbar" src="images/close.png" alt="">
             <li><a href="#services">Services</a></li>
             <li><a href="#clients">Clients</a></li>
             <li><a href="#team">Our team</a></li>
             <li><img src="images/light_mode.svg" alt=""></li>
             <button>Contact us</button>
         </nav>
+        <img id="openNavbar" src="images/menu.png" alt="">
     </header>
     <main>
 
         <!-- hero -->
         <section id="hero">
             <h1>We're an independent development agency.</h1>
-            <p>We understand the intricacies of web development inside-out. That's why we build rock-solid mobile and web applicatios enriched with visual experiences.</p>
+            <p>We understand the intricacies of web development inside-out. That's why we build rock-solid mobile and web applications enriched with visual experiences.</p>
             <button>Contact us</button>
         </section>
 
@@ -35,36 +37,41 @@
             <span>OUR SERVICES</span>
             <div class="services-grid">
                 <div class="services-grid-item">
-                    <img src="images/mobile_dev.svg" alt="">
+                    <div class="services-grid-item-image">
+                        <img src="images/mobile_dev.svg" alt="">
+                    </div>
                         <div>
                             <h2>Mobile Development</h2>
                             <p>We develop mobile apps for all contemporary mobile platforms. Mamon team builds native and cross-platform solutions.</p>
                         </div>
-                    </img>
                 </div>
                 <div class="services-grid-item">
-                    <img src="images/product_design.svg" alt="">
+                    <div class="services-grid-item-image">
+                        <img src="images/product_design.svg" alt="">
+                    </div>
                         <div>
                             <h2>Product Design</h2>
                             <p>We create design given the product audience, goal, business domain, technology and the platform for the solution.</p>
                         </div>
-                    </img>
                 </div>
                 <div class="services-grid-item">
-                    <img src="images/web_dev.svg" alt="">
+                    <div class="services-grid-item-image">
+                        <img src="images/web_dev.svg" alt="">
+                    </div>
                         <div>
                             <h2>Web Development</h2>
                             <p>Mamon offers full range of services from various CMS and frameworks based websites to complex ERP/CRM solutions and e-commerce stores.</p>
                         </div>
-                    </img>
+
                 </div>
                 <div class="services-grid-item">
-                    <img src="images/qa.svg" alt="">
+                    <div class="services-grid-item-image">
+                        <img src="images/qa.svg" alt="">
+                    </div>
                         <div>
                             <h2>Quality Assurance</h2>
                             <p>Our QA team ensures high standard of quality of products delivered.</p>
                         </div>
-                    </img>
                 </div>
             </div>
         </section>
@@ -105,6 +112,14 @@
                         <div>
                             <h2>Sergey</h2>
                             <p>Technology Director</p>
+                        </div>
+                    </img>
+                </div>
+                <div class="team-grid-item">
+                    <img src="images/andrey.svg" alt="">
+                        <div>
+                            <h2>Andrey</h2>
+                            <p>Front-end Developer</p>
                         </div>
                     </img>
                 </div>
@@ -160,7 +175,7 @@
         </section>
     </main>
     <footer>
-        <img src="" alt="">
+        <img class="logo" src="images/logo.svg" alt="">
         <ul>
             <li><img src="images/github.svg" alt=""></li>
             <li><img src="images/behance.svg" alt=""></li>
@@ -168,6 +183,8 @@
             <li><img src="images/codepen.svg" alt=""></li>
         </ul>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
 
